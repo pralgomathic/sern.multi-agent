@@ -261,33 +261,48 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+       <p>
+            The increasing deployment of autonomous systems in complex environments 
+            necessitates efficient communication and task completion among multiple agents. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            This paper presents <strong>SERN</strong> (Simulation-Enhanced Realistic Navigation), 
+            a novel framework integrating virtual and physical environments for real-time 
+            collaborative decision-making in multi-robot systems. SERN addresses key challenges 
+            in asset deployment and coordination through our bi-directional 
+            <strong>SERN ROS Bridge</strong> communication framework.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Our approach advances the state-of-the-art (SOTA) through:
+            <ul>
+              <li>Accurate real-world representation in virtual environments using Unity’s high-fidelity simulator.</li>
+              <li>Synchronization of physical and virtual robot movements.</li>
+              <li>Efficient ROS data distribution between remote locations.</li>
+              <li>Integration of SOTA semantic segmentation for enhanced environmental perception.</li>
+            </ul>
           </p>
+          <p>
+            Additionally, we introduce a <strong>Multi-Metric Cost Function (MMCF)</strong> that dynamically balances 
+            latency, reliability, computational overhead, and bandwidth consumption to optimize 
+            system performance in contested environments.
+          </p>
+          <p>
+            We further provide theoretical justification for synchronization accuracy by proving 
+            that the positional error between physical and virtual robots remains bounded under 
+            varying network conditions.
+          </p>
+          <p>
+            Our evaluations show a <strong>15% to 24% improvement</strong> in latency and up to a 
+            <strong>15% increase</strong> in processing efficiency compared to traditional ROS setups. 
+            Real-world and virtual simulation experiments with multiple robots 
+            (<em>Clearpath Jackal and Husky</em>) demonstrate synchronization accuracy, achieving 
+            less than <strong>5 cm</strong> positional error and under <strong>2°</strong> rotational error.
+          </p>
+          <p>
+            These results highlight SERN's potential to enhance situational awareness and 
+            multi-agent coordination in diverse, contested environments.
+          </p>
+        
         </div>
       </div>
     </div>
